@@ -57,7 +57,7 @@ app.delete('/tickets/:id', (req, res) => {
 });
 
 // Запуск сервера
-const PORT = process.env.PORT || 7070; //изменил для генерации порта в рэйлуэй
+const PORT = process.env.PORT || 8080; //изменил для генерации порта в рэйлуэй
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}, HELLO WORLD!`);
 });
