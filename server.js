@@ -10,7 +10,7 @@ let tickets = [];
 
 // Получить все тикеты
 app.get('/tickets', (req, res) => {
-    res.status(200).json(tickets.map(({ id, name, status, created }) => ({ id, name, status, created })));
+    res.status(200).json(tickets.map(({ id, name, status, created, description }) => ({ id, name, status, created, description })));
 });
 
 // Получить тикет по ID
